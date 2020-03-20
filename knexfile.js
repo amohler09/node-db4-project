@@ -6,7 +6,12 @@ module.exports = {
     connection: {
       filename: "./data/cookbook.db3"
     },
-    useNullAsDefault: true
+    useNullAsDefault: true,
+    pool: {
+      afterCreate: (conn, done) => {
+        conn.run("PRAGMA foreign_keys = ON", done);
+      }
+    }
   },
 
   staging: {

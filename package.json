@@ -1,0 +1,27 @@
+{
+  "name": "node-db4-project",
+  "version": "1.0.0",
+  "description": "Node DB4 Project",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amohler09/node-db4-project.git"
+  },
+  "author": "Lambda School",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amohler09/node-db4-project/issues"
+  },
+  "homepage": "https://github.com/amohler09/node-db4-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.12",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
